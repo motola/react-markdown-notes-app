@@ -1,7 +1,6 @@
 import { fileURLToPath } from 'url';
 import path,{ dirname } from 'path';
-
-const HtmlWebpackPlugin = require('html-webpack-plugin');
+import HtmlWebpackPlugin from 'html-webpack-plugin';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
@@ -23,7 +22,9 @@ export default {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: './public/index.html',  // path to your HTML template
+      inject: true,
+      // copys the content of the existing index.html to the new /build index.html
+      template:  path.resolve('./index.html'),
     }),
   ],
   resolve: {
