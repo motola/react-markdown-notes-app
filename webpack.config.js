@@ -1,6 +1,7 @@
 import { fileURLToPath } from 'url';
 import path,{ dirname } from 'path';
 
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
@@ -20,6 +21,11 @@ export default {
       },
     ],
   },
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: './public/index.html',  // path to your HTML template
+    }),
+  ],
   resolve: {
     extensions: ['.js', '.jsx'],
   },
