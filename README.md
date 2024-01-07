@@ -1,5 +1,5 @@
 # react-markdown-notes-app
-
+![Local Image](./images/design.png)
 # A React WebNotes Application
 
 A creative React application for taking and managing notes and diaries. Persisted data with Firebase Firestore and utilized Debouncing a technique that helps to improve performance and user experience in scenarios where frequent updates or actions need to be handled more efficiently.
@@ -33,7 +33,7 @@ A creative React application for taking and managing notes and diaries. Persiste
 
 
 
-![Local Image](./images/design.png)
+
 ![Local Image](./images/design2.png)
 
 2. Navigate to the project directory
